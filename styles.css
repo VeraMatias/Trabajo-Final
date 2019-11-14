@@ -1,0 +1,436 @@
+/*DECLARACION DE IMPORTs*/
+@import url('../css/variables.css');
+@import url('../css/fonts.css');
+@import url('../css/quotation.css');
+@import url('../css/media-query.css');
+
+/*PARAMETROS GLOBALES*/
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    /* width: 1280px; */
+    height: 3547px;
+    background-color: var(--Secundario-Blanco);
+    margin-right: auto;
+
+}
+
+/*PARAMETROS NAV*/
+nav {
+    width: auto;
+    margin-top: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+    .logo {
+        margin-left: 87px;
+    }
+
+    .contact {
+        /* margin-right: 87px; 
+        margin-left: auto; */
+        margin-left: 870px;
+        width: 159px;
+        height: 39px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--Principal-coral);
+        border: 1px solid var(--Principal-coral);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact:hover{
+        background-color: var(--Principal-coral);
+        color: var(--Secundario-Blanco);
+    }
+/*PARAMETROS HEADER*/
+header{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 22px;
+    height: max-content;
+}
+    .head-left{
+        height: 570px;
+        margin-left: 87px;
+    }
+        header h1 {
+            margin-top: 90px;
+            width: 439px;
+            height: 228px;
+            font-family: Montserrat;
+            font-size: 60px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 70px;
+            letter-spacing: normal;
+            color: var(--Principal-azul);
+        }
+
+        header p {
+            width: 413px;
+            height: 86px;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 22px;
+            letter-spacing: normal;
+            color: var(--Principal-azul);
+        }
+
+        .head.right{
+            height: 570px;
+        }
+/*PARAMETROS SECTION DE CARTAS*/
+.container-father-cards {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/bg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: left;
+    background-size: contain;
+}
+
+    .container-father-cards h2{
+        width: 641px;
+        height: 90px;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 45px;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--Principal-azul);
+        align-self: center;
+    }
+
+    .container-father-cards p{
+        width: 555px;
+        height: 53px;
+        margin-top: 27px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--Principal-azul);
+        align-self: center;
+    }
+    .container-cards{
+        display: grid;
+        grid-template-columns: repeat(3,342px);
+        grid-gap: 40px;
+        margin-left: 87px;
+        margin-top: 62px;
+        margin-bottom: 109px;
+    }
+        .card {
+            background-color: gray;
+            height: 294px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+            background-color: var(--Secundario-Blanco);
+        }
+            .design{
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                margin: 30px 0 0 28px;
+            }
+
+            .card h4{
+                margin: 36px 0 0 28px;
+                width: 283px;
+                height: 32px;
+                font-family: Montserrat;
+                font-size: 28px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.14;
+                letter-spacing: normal;
+                color: var(--Principal-azul);
+            }
+
+            .card p {
+                margin: 19px 0 0 28px;
+                width: 272px;
+                height: 48px;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.38;
+                letter-spacing: normal;
+                text-align: left;
+                color: var(--Principal-Gris);
+            }
+
+            .card a{
+                margin: 21px 0 0 28px;
+                width: 272px;
+                height: 40px;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                color: var(--Principal-coral);
+            }
+
+/*PARAMETROS SECTION DE SOCIOS EMPRESARIALES*/
+.container-father-partners {
+    display: flex;
+    flex-direction: column;
+}
+    .container-father-partners h4{
+        margin-top: 62px;
+        width: 641px;
+        height: 32px;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--Principal-azul);
+        align-self: center;
+    }
+    .container-partners{
+        margin-top: 57px;
+        display: inline-block;
+    }
+        .logo-dropbox{
+            margin-left: 172px;
+            width: 150px;
+            height: 30px;
+            object-fit: contain;
+        }
+        .logo-intuit{
+            margin-left: 77px;
+            width: 103px;
+            height: 30px;
+            object-fit: contain;
+        }
+        .logo-salesforce{
+            margin-left: 77px;
+            width: 132px;
+            height: 30px;
+            object-fit: contain;
+        }
+        .logo-timex{
+            margin-left: 72px;
+            width: 150px;
+            height: 30px;
+            object-fit: contain;
+        }
+        .logo-bbc{
+            margin-left: 77px;
+            width: 99px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+
+/*PARAMETROS SECTION DE TRABAJOS REALIZADOS*/
+.container-father-jobs {
+    display: flex;
+}
+    .jobs-left{
+        margin-top:198px;
+        width: 500.9px;
+        height: 524px; 
+    }
+
+
+    .jobs-left h2{
+        margin-left: 87px;
+        width: 375px;
+        height: 90px;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: var(--Principal-azul);
+    }
+
+    .jobs-left p {
+        margin: 30px 0 0 87px;
+        width: 382px;
+        height: 86px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: var(--Principal-azul);
+    }
+    .jobs-right {
+        display: flex;
+        margin-top:198px;
+        height: 524px;
+        width: 615px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .jobs-right::-webkit-scrollbar-track
+    {
+        border-radius: 10px;
+        background-color: var(--Segundario-Gris-Claro);   
+    }
+
+    .jobs-right::-webkit-scrollbar
+    {
+        width: 12px;
+    }
+
+    .jobs-right::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        background-color: var(--Principal-coral);
+    }
+        .proyectos{
+            width: 607px;
+            height: 524px;
+            object-fit: contain;       
+        }
+
+    .path{
+        width: 533px;
+        height: 709px;
+        object-fit: contain;
+        position: absolute; 
+        /* left: 747px;   */
+        top: 1473px; 
+        right: 0px;
+        
+        z-index: -1;
+    }
+
+/*PARAMETROS SECTION DE OPINIONES*/
+.container-father-review {
+    margin-top: 123px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 382px;
+    background-color: var(--Secundario-Coral-Fondos);
+    position: relative;
+}
+    .testimonial-avatar{
+        margin-top: 30px;
+        width: 115px;
+        height: 115px;
+        object-fit: contain;
+    }
+    
+    .container-father-review h4{
+        margin-top: 27px;
+        width: 631px;
+        height: 104px;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--Principal-azul);
+    }
+
+    .container-father-review p{
+        margin-top: 3px;
+        /* width: 129px; */
+        width: 131px;
+        height: 24px;
+        opacity: 0.5;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--Principal-azul)
+    }
+    .review-logo {
+        margin-top: 13px;
+        width: 60px;
+        height: 18px;
+        object-fit: contain;
+    }
+
+    .group-33 {
+        width: 118px;
+        height: 253px;
+        object-fit: contain;
+        position: absolute; 
+        right: 0px; 
+        top: 256px; 
+      }
+
+/*PARAMETROS SECTION DE PEDIDO DE COTIZACIONES*/
+
+/*PARAMETROS  FOOTER*/
+footer{
+    display: inline-block;
+    margin-top: 84px;
+    width: 100%;
+    height: 64px;
+    background-color: var(--Principal-azul);
+    
+}
+footer p{
+    margin: 24px auto 23px 87px;
+    width: 260px;
+    height: 17px;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    color: var(--Secundario-Blanco);
+}

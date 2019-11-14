@@ -1,0 +1,82 @@
+@media (max-width: 1215px) {
+  nav .contact {
+    margin-left: auto;
+  }
+
+  .head-right img {
+    max-width: 100%;
+    align-self: center;
+  }
+
+  .container-father-cards .container-cards {
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 5px;
+  }
+}
+@media (max-width: 1143px) {
+  .container-father-partners .container-partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: center;
+    grid-column-gap: 50px;
+  }
+  .container-father-partners img {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+  }
+}
+@media (max-width: 1133px) {
+  .container-father-jobs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-father-jobs .jobs-left {
+    margin-top: 50px;
+    height: 50%;
+    text-align: center;
+  }
+  .container-father-jobs .jobs-right {
+    margin-top: 10px;
+  }
+  .container-father-jobs .path {
+    display: none;
+  }
+}
+@media (max-width: 1108px) {
+  .container-father-cards .container-cards {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: auto;
+  }
+  .container-father-cards .container-cards .card {
+    margin-bottom: 15px;
+  }
+
+  .container-father-quotation {
+    flex-direction: column-reverse;
+  }
+  .container-father-quotation .quotation-right {
+    margin: 0 auto;
+    align-items: center;
+  }
+  .container-father-quotation .quotation-left {
+    position: static;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1050px) {
+  header {
+    flex-direction: column;
+  }
+
+  .head-right {
+    height: 500px;
+    margin-top: -150px;
+  }
+}
+
+/*# sourceMappingURL=media-query.css.map */

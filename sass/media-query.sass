@@ -1,0 +1,79 @@
+$first-limit: 1215px
+$second-limit: 1143px
+$third-limit: 1133px
+$fourth-limit: 1108px
+$fifth-limit: 1050px
+
+@media (max-width: $first-limit)
+    nav .contact
+        margin-left: auto
+
+    .head-right img
+        max-width: 100%
+        align-self: center
+
+    .container-father-cards .container-cards
+        margin-left: auto
+        margin-right: auto
+        grid-gap: 5px
+    
+@media (max-width: $second-limit)
+    .container-father-partners
+        .container-partners
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            align-self: center
+            grid-column-gap: 50px
+
+        & img
+            margin-bottom: 30px
+            margin-left: auto
+            margin-right: auto
+            align-self: center
+
+@media (max-width: $third-limit)
+    .container-father-jobs
+        flex-direction: column
+        align-items: center 
+
+        .jobs-left
+            margin-top: 50px
+            height: 50%
+            text-align: center
+
+        .jobs-right
+            margin-top: 10px
+
+        .path
+            display: none
+    
+@media (max-width: $fourth-limit)
+    .container-father-cards .container-cards
+        display: flex
+        flex-direction: column
+        width: 98%
+        margin: auto
+
+        .card
+            margin-bottom: 15px
+
+    .container-father-quotation
+        flex-direction: column-reverse
+
+        .quotation-right
+            margin: 0 auto
+            align-items: center
+
+        .quotation-left
+            position: static
+            margin: 0 auto
+
+
+@media (max-width: $fifth-limit)
+
+    header
+        flex-direction: column
+
+    .head-right
+        height: 500px
+        margin-top: -150px

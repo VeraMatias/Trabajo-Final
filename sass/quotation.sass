@@ -1,0 +1,119 @@
+@import ../css/variables.css
+@import ../css/fonts.css
+
+.container-father-quotation
+    margin-top: 150px
+    display: flex
+    width: 100%
+
+    .quotation-left
+        margin-top: 14px
+        width: 691px
+        height: 504px
+        object-fit: contain
+        position: relative
+        left: -160px
+
+    .quotation-right
+        height: auto
+        display: flex
+        flex-direction: column
+
+        h2
+            width: 382px
+            height: 65px
+            font-family: Montserrat
+            font-size: 36px
+            font-weight: normal
+            font-stretch: normal
+            font-style: normal
+            line-height: 1.25
+            letter-spacing: normal
+            color: var(--Principal-azul)
+            margin-bottom: 25px
+
+.container-father-quotation a
+    margin-top: 18px
+    width: 176px
+    height: 49px
+    border-radius: 6px
+    background-color: var(--Principal-coral)
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    font-family: Montserrat
+    font-size: 14px
+    font-weight: 600
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.43
+    letter-spacing: normal
+    color: var(--Secundario-Blanco)
+
+    &:hover
+        box-shadow: 0 2px 4px 0 rgba(255, 85, 56, 0.36)
+    
+.input-container
+    margin-bottom: 25px
+    display: block
+    width: 382px
+    height: 58px  //SON 56PX DEL TAMAÑO DE zEPLIN + 2 DEL BORDER
+    border-radius: 4px
+    background-color: var(--Segundario-Gris-Claro)
+    position: relative
+    overflow: hidden
+    padding-left: 16px
+
+    .label-input
+        position: absolute
+        top: 15px
+        left: 16px
+        display: block
+
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 300
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.38
+        letter-spacing: normal
+        color: var(--Principal-azul)
+
+    input, textarea
+        height: 22px
+        width: 100%
+        
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 300
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.38
+        letter-spacing: normal
+        color: var(--Principal-azul)
+
+        padding-top: 25px
+        padding-bottom: 9px
+        background: none
+        border: none
+        outline: none
+        appearance: none
+
+        border-bottom: 2px solid transparent
+        resize: none
+
+        &:focus
+            border-color: var(--Principal-azul)
+
+        &:focus ~ .label-input, &:valid ~ .label-input
+            top: 9px
+            font-size: 12px
+            line-height: 1.42
+
+    textarea
+        height: 140px
+
+.input-container.textarea
+    height: 176px
